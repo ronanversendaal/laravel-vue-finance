@@ -35,7 +35,7 @@ class CreateWalletRecords extends Migration
 
             $table->string('payment_type');
             $table->date('date');
-            $table->integer('ref_amount');
+            $table->float('ref_amount');
             $table->text('note')->nullable();
             $table->string('record_state');
             $table->timestamps();
