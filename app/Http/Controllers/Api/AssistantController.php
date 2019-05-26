@@ -27,7 +27,7 @@ class AssistantController extends ApiController
             $requestHandlerRegistry->addHandler($mySimpleRequestHandler);
             $response = $requestHandlerRegistry->getSupportingHandler($googleRequest)->handleRequest($googleRequest);
 
-            return json_encode($response);
+            return response()->json($response);
         } catch (MissingRequestHandlerException $e) {
             dd($e->getMessage());
         } catch (InvalidRequestException $e) {
