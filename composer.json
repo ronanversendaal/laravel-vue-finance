@@ -9,15 +9,16 @@
     "license": "MIT",
     "require": {
         "php": "7.3.4",
+        "ext-pdo_sqlite": "*",
         "fideloper/proxy": "^4.0",
         "guzzlehttp/guzzle": "^6.3",
         "kronthto/laravel-oauth2-login": "^1.7",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
+        "maxbeckers/google-actions-php": "^0.1.0",
         "moneyphp/money": "^3.2",
         "spatie/laravel-query-builder": "^1.17",
-        "spatie/laravel-responsecache": "^6.0",
-		"ext-pdo_sqlite": "*"
+        "spatie/laravel-responsecache": "^6.0"
     },
     "require-dev": {
 		"roave/security-advisories": "dev-master",
