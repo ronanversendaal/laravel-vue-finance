@@ -78,7 +78,6 @@ class SyncCommand extends Command
         /**
          * @todo only insert new records so tables dont need truncatin'
          */
-
         Artisan::call('migrate:refresh', ['--force' => true]);
 
         try{
@@ -142,6 +141,7 @@ class SyncCommand extends Command
 
         } catch (\PDOException $e) {
             logger("Exception thrown while saving {$class}: {$e->getMessage()} ". Carbon::createFromTimestamp(1558829653)->toDateTimeLocalString());
+            var_dump($e->getMessage());
         }
 
 
