@@ -20,7 +20,7 @@ class CreateWalletAccounts extends Migration
             $table->string('color');
             $table->boolean('exclude_from_stats');
             $table->boolean('gps');
-            $table->integer('init_amount');
+            $table->float('init_amount');
             $table->float('balance')->default(0);
             $table->integer('position');
             $table->timestamps();
