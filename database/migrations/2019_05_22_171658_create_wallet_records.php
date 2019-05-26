@@ -15,7 +15,7 @@ class CreateWalletRecords extends Migration
     {
         Schema::create('records', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('amount');
+            $table->float('amount');
             $table->string('wallet_id')->unique();
             $table->string('wallet_account_id');
             $table->string('wallet_category_id');
