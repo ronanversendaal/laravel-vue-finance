@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "72acec600277f3010d5073ac1ea4285b",
+    "content-hash": "7da13837f918ae175576151bc6c3ec91",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1061,6 +1061,52 @@
                 "single sign on"
             ],
             "time": "2018-11-22T18:33:57+00:00"
+        },
+        {
+            "name": "maxbeckers/google-actions-php",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maxbeckers/google-actions-php.git",
+                "reference": "965a5b8cd40eb9ced6c67abcf4a8337f959d75b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maxbeckers/google-actions-php/zipball/965a5b8cd40eb9ced6c67abcf4a8337f959d75b6",
+                "reference": "965a5b8cd40eb9ced6c67abcf4a8337f959d75b6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MaxBeckers\\GoogleActions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maximilian Beckers",
+                    "email": "beckers.maximilian@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This library is a helper for google actions with php.",
+            "keywords": [
+                "actions",
+                "google",
+                "home",
+                "php"
+            ],
+            "time": "2017-08-07T18:25:24+00:00"
         },
         {
             "name": "moneyphp/money",

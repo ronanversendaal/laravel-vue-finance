@@ -141,7 +141,6 @@ class SyncCommand extends Command
 
         } catch (\PDOException $e) {
             logger("Exception thrown while saving {$class}: {$e->getMessage()} ". Carbon::createFromTimestamp(1558829653)->toDateTimeLocalString());
-            var_dump($e->getMessage());
         }
 
 

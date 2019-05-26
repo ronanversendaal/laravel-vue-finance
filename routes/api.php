@@ -38,6 +38,10 @@ Route::prefix('account/{account}')->group(function (){
 
 });
 
+Route::group(['prefix' => 'assistant'], function (){
+    Route::get('fulfill', 'Api\AssistantController@fulfillAction');
+});
+
 
 Route::group(['prefix' => 'accounts'] , function(){
 
