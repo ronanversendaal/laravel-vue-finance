@@ -12,7 +12,9 @@ use App\Wallet\Currency;
 use App\Wallet\Record;
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Storage;
 use Spatie\ResponseCache\Facades\ResponseCache;
 
@@ -76,10 +78,8 @@ class SyncCommand extends Command
         /**
          * @todo only insert new records so tables dont need truncatin'
          */
-        DB::table('records')->truncate();
-        DB::table('currencies')->truncate();
-        DB::table('categories')->truncate();
-        DB::table('accounts')->truncate();
+
+        Artisan::call('migrate:refresh', ['--force' => true]);
 
         try{
 
